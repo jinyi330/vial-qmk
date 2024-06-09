@@ -59,9 +59,9 @@
  **      UART Driver
  *========================**/
 
-#if !defined(UART_DRIVER)
-#    define UART_DRIVER SIOD0
-#endif
+// #if !defined(UART_DRIVER)
+// #    define UART_DRIVER SIOD0
+// #endif
 
 #if !defined(UART_TX_PIN)
 #    define UART_TX_PIN GP0

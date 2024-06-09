@@ -24,7 +24,13 @@ static bool spiStarted = false;
 static pin_t currentSlavePin;
 #endif
 
-static SPIConfig spiConfig;
+// static SPIConfig spiConfig;
+
+#if defined(K20x) || defined(KL2x) || defined(RP2040)
+static SPIConfig spiConfig = {NULL, 0, 0, 0};
+#else
+static SPIConfig spiConfig = {false, NULL, 0, 0, 0, 0};
+#endif
 
 __attribute__((weak)) void spi_init(void) {
     static bool is_initialised = false;

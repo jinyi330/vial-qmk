@@ -1,0 +1,23 @@
+{
+    "keyboard_name": "jin16", 
+    "manufacturer": "jy studio",
+    "maintainer": "qmk", 
+    "usb": {
+      "vid": "0xFEED",
+      "pid": "0x6060",
+      "device_version": "0.0.1"
+    },
+    "matrix_pins": {
+      "direct": [
+        ["B9", "B8", "B7", "B6"],
+        ["B15", "B14", "B13", "B12", "B11"],
+        ["A7", "A6", "A5", "A4", "A3"]
+      ]
+    },
+    "layouts": {
+      "LAYOUT": {
+        "layout": [{"x":0, "y":0}, {"x":1, "y":0}, {"x":2, "y":0}, {"x":3, "y":0}, {"x":0, "y":1}, {"x":1, "y":1}, {"x":2, "y":1}, {"x":3, "y":1},{"x":4, "y":1},{"x":0, "y":2}, {"x":1, "y":2}, {"x":2, "y":2}, {"x":3, "y":2},{"x":4, "y":2}]
+      }
+    }
+  }
+  

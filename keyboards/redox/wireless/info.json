@@ -1,5 +1,5 @@
 {
-  "keyboard_name": "Redox Wireless",
+  "keyboard_name": "Redox Wireless 103",
   "manufacturer": "Mattia Dal Ben",
   "url": "",
   "maintainer": "qmk",
@@ -8,15 +8,7 @@
     "pid": "0x5257",
     "device_version": "0.0.1"
   },
-  "features":{
-    "bootmagic": true,
-    "command": true,
-    "console": true,
-    "mousekey": true,
-    "extrakey": true,
-    "nkro": true
-  },
-  "development_board": "promicro",
+
   "layouts": {
     "LAYOUT": {
       "layout": [

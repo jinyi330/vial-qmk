@@ -705,6 +705,17 @@ ifeq ($(strip $(LIB8TION_ENABLE)), yes)
     SRC += $(LIB_PATH)/lib8tion/lib8tion.c
 endif
 
+VALID_UART_DRIVER_TYPES := serial sio vendor
+ifeq ($(strip $(UART_ENABLE)), yes)
+    UART_DRIVER ?= serial
+    ifeq ($(filter $(UART_DRIVER),$(VALID_UART_DRIVER_TYPES)),)
+        $(call CATASTROPHIC_ERROR,Invalid UART_DRIVER,UART_DRIVER="$(UART_DRIVER)" is not a valid UART driver)
+    endif
+
+    QUANTUM_LIB_SRC += uart.c
+    QUANTUM_LIB_SRC += uart_$(strip $(UART_DRIVER)).c    
+endif
+
 VALID_HAPTIC_DRIVER_TYPES := drv2605l solenoid
 ifeq ($(strip $(HAPTIC_ENABLE)),yes)
     ifeq ($(filter $(HAPTIC_DRIVER),$(VALID_HAPTIC_DRIVER_TYPES)),)

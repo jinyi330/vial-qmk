@@ -1,0 +1,11 @@
+{
+    "keyboard_name": "jin64",
+    "manufacturer": "jy studio",
+    "url": "",
+    "maintainer": "jinyi",
+    "usb": {
+        "vid": "0x5A56",
+        "pid": "0x0001",
+        "device_version": "0.0.1"
+    }
+}
